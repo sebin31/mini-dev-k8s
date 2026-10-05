@@ -12,6 +12,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: self-hosted
+    env:
+      KUBECONFIG: C:\Users\Lenovo\.kube\config
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
